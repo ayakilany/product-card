@@ -1,0 +1,89 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 325px;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mobileImage {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.desktopImage {
+  display: none;
+}
+
+.content {
+  padding: 20px;
+}
+.perfume{
+  text-transform:uppercase;
+  letter-spacing:3px ;
+
+}
+h1 {
+  font-family: 'Fraunces', serif;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.oldNewPrice {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+ 
+  color: hsl(158, 36%, 37%);
+}
+
+del {
+  margin-left: 15px;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+button:hover{
+cursor: pointer;
+background-color:hsl(158, 36%, 30%);
+}
+
+@media only screen and (min-width: 760px) {
+  .desktopImage {
+    display: block;
+    width:50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .mobileImage {
+    display: none;
+  }
+  .container{
+   display: flex;
+     width: 500px;
+  
+
+  }
+}
